@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B947C2382C935A6800984C2C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B947C2372C935A6800984C2C /* FirebaseDatabase */; };
+		B94C03412CA438C200C85555 /* libLLVM.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B94C03402CA438C200C85555 /* libLLVM.dylib */; };
+		B956547F2C98709D00471B04 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = B956547E2C98709D00471B04 /* SideMenu */; };
+		B958AB162CA31CF400E8DB24 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = B958AB152CA31CF400E8DB24 /* FirebaseFunctions */; };
+		B9781DE82C935944001B70FF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B9781DE72C935944001B70FF /* FirebaseAnalytics */; };
+		B9781DEA2C935944001B70FF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B9781DE92C935944001B70FF /* FirebaseAuth */; };
+		B9781DEC2C935944001B70FF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B9781DEB2C935944001B70FF /* FirebaseFirestore */; };
+		B9781DEE2C935944001B70FF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B9781DED2C935944001B70FF /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B9A529A82C82418400FA2AAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +35,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B94C03402CA438C200C85555 /* libLLVM.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLLVM.dylib; path = usr/lib/libLLVM.dylib; sourceTree = SDKROOT; };
 		B9A529972C82418100FA2AAF /* Deskapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A529A72C82418400FA2AAF /* DeskappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A529B12C82418400FA2AAF /* DeskappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B9558C072C94092900C85CA3 /* Exceptions for "Deskapp" folder in "Deskapp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B9A529962C82418100FA2AAF /* Deskapp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B9A529992C82418100FA2AAF /* Deskapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B9558C072C94092900C85CA3 /* Exceptions for "Deskapp" folder in "Deskapp" target */,
+			);
 			path = Deskapp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94C03412CA438C200C85555 /* libLLVM.dylib in Frameworks */,
+				B947C2382C935A6800984C2C /* FirebaseDatabase in Frameworks */,
+				B958AB162CA31CF400E8DB24 /* FirebaseFunctions in Frameworks */,
+				B9781DE82C935944001B70FF /* FirebaseAnalytics in Frameworks */,
+				B9781DEC2C935944001B70FF /* FirebaseFirestore in Frameworks */,
+				B9781DEA2C935944001B70FF /* FirebaseAuth in Frameworks */,
+				B956547F2C98709D00471B04 /* SideMenu in Frameworks */,
+				B9781DEE2C935944001B70FF /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +105,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9781DE62C935944001B70FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B94C03402CA438C200C85555 /* libLLVM.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9A5298E2C82418100FA2AAF = {
 			isa = PBXGroup;
 			children = (
 				B9A529992C82418100FA2AAF /* Deskapp */,
 				B9A529AA2C82418400FA2AAF /* DeskappTests */,
 				B9A529B42C82418400FA2AAF /* DeskappUITests */,
+				B9781DE62C935944001B70FF /* Frameworks */,
 				B9A529982C82418100FA2AAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +154,13 @@
 			);
 			name = Deskapp;
 			packageProductDependencies = (
+				B9781DE72C935944001B70FF /* FirebaseAnalytics */,
+				B9781DE92C935944001B70FF /* FirebaseAuth */,
+				B9781DEB2C935944001B70FF /* FirebaseFirestore */,
+				B9781DED2C935944001B70FF /* FirebaseStorage */,
+				B947C2372C935A6800984C2C /* FirebaseDatabase */,
+				B956547E2C98709D00471B04 /* SideMenu */,
+				B958AB152CA31CF400E8DB24 /* FirebaseFunctions */,
 			);
 			productName = Deskapp;
 			productReference = B9A529972C82418100FA2AAF /* Deskapp.app */;
@@ -195,6 +244,10 @@
 			);
 			mainGroup = B9A5298E2C82418100FA2AAF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B956547D2C98709D00471B04 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9A529982C82418100FA2AAF /* Products */;
 			projectDirPath = "";
@@ -393,17 +446,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Deskapp/Preview Content\"";
 				DEVELOPMENT_TEAM = 9MP722P3GC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Deskapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +467,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mitpatel0044.Deskapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,17 +481,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Deskapp/Preview Content\"";
 				DEVELOPMENT_TEAM = 9MP722P3GC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Deskapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +502,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mitpatel0044.Deskapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +623,62 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+		B956547D2C98709D00471B04 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/akardas16/SideMenu.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B947C2372C935A6800984C2C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseDatabase;
+		};
+		B956547E2C98709D00471B04 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B956547D2C98709D00471B04 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		B958AB152CA31CF400E8DB24 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		B9781DE72C935944001B70FF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B9781DE92C935944001B70FF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B9781DEB2C935944001B70FF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B9781DED2C935944001B70FF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93EE5962C9349F8008D2AC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9A5298F2C82418100FA2AAF /* Project object */;
 }
